@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: 'Tajawal', sans-serif;
+}
+
+header {
+    min-height: 350px;
+}
+
+.parallax-hero-banner {
+    background-image: url('../img/pexels-soumil-kumar-735911.jpg');
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    object-fit: cover;
+    height: 100%;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 .5em 1em -.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+    max-width: 100%;
+    position: relative;
+}
+
+.card:hover {
+    opacity: 0.9;
+}
+
+.card {
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+    color: white;
+}
+
+
+.divider {
+    margin: auto;
+    background-color: #e4e4e4;
+    height: 2px;
+    padding: 0px;
+}
+
+.is-one-third,
+.is-one-third-tablet {
+    flex: none;
+    width: 33.3333%;
+}
+
+
+.icon-text {
+    align-items: flex-start;
+    color: inherit;
+    display: inline-flex;
+    flex-wrap: wrap;
+    line-height: 1.5rem;
+    vertical-align: top;
+}
+
+.online-green {
+    color: #00c900;
+    margin-left: -0.2em;
+}
+
+.card-footer {
+    background-color: #272424;
+}
